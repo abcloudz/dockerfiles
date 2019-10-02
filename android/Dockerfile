@@ -1,5 +1,5 @@
 FROM runmymind/docker-android-sdk:latest
 LABEL maintainer "DBBEST Android"
 
-RUN apt-get update && apt-get install -y \
+RUN apk -U update && apk -U add \
     jq
