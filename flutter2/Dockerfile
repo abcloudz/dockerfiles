@@ -1,4 +1,4 @@
-FROM cirrusci/flutter:1.22.6
+FROM cirrusci/flutter:latest
 LABEL maintainer "3rd party developers"
 
 RUN set -o xtrace \
