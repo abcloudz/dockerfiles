@@ -1,5 +1,5 @@
 FROM cirrusci/flutter:1.22.6
-LABEL maintainer "3rd party developers"
+LABEL maintainer "0"
 
 RUN set -o xtrace \
     && apt-get update \
