@@ -25,7 +25,7 @@ RUN dpkg --add-architecture i386 && apt-get update -yqq && apt-get install -y \
   vim \
   openssh-client \
   locales \
-  bsdtar \
+  tar \
   libio-socket-ssl-perl \
   libnet-ssleay-perl \
   sendemail \
