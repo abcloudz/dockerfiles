@@ -33,7 +33,7 @@ echo "sdkmanager version:"
 sdkmanager --version
 
 echo "Installing expect"
-apt install expect
+apt update -yqq && apt install -y expect
 
 echo "Installing packages"
 while read p; do
