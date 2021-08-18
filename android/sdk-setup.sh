@@ -32,6 +32,9 @@ touch ~/.android/repositories.cfg
 echo "sdkmanager version:"
 sdkmanager --version
 
+echo "Installing expect"
+apt install expect
+
 echo "Installing packages"
 while read p; do
       android-accept-licenses.sh "sdkmanager ${p}"
