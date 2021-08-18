@@ -1,8 +1,8 @@
 ANDROID_HOME='/opt/android-sdk-linux'
-CMD_TOOLS='/opt/android-cmdline-tools'
+CMD_TOOLS='cmdline-tools/latest/'
 NDK_BUNDLE='${ANDROID_HOME}/ndk-bundle'
 
-cd /opt
+cd ${ANDROID_HOME}
 
 echo "Downloading cmdline-tools"
 mkdir -p ${CMD_TOOLS} \
