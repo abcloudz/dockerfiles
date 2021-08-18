@@ -34,11 +34,11 @@ sdkmanager --version
 
 echo "Installing packages"
 while read p; do
-      android-accept-licenses.sh "sdkmanager ${SDKMNGR_OPTS} ${p}"
+      android-accept-licenses.sh "sdkmanager ${p}"
     done < ${ANDROID_HOME}/package-list.txt
 
 echo "Updating SDK"
-android-accept-licenses.sh "sdkmanager ${SDKMNGR_OPTS} --update"
+android-accept-licenses.sh "sdkmanager --update"
 
 # https://stackoverflow.com/questions/35128229/error-no-toolchains-found-in-the-ndk-toolchains-folder-for-abi-with-prefix-llv
 if [ -d /opt/android-sdk-linux/ndk-bundle/toolchains ]
