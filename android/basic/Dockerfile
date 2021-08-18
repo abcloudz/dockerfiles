@@ -10,6 +10,11 @@ ENV ANDROID_SDK_ROOT /opt/android-sdk-linux
 ENV ANDROID_HOME /opt/android-sdk-linux
 ENV ANDROID_SDK /opt/android-sdk-linux
 
+# share /opt/android-ndk-linux volume from host
+ENV ANDROID_NDK /opt/android-ndk-linux
+ENV ANDROID_NDK_HOME /opt/android-ndk-linux
+ENV ANDROID_NDK_ROOT /opt/android-ndk-linux
+
 RUN dpkg --add-architecture i386 && apt-get update -yqq && apt-get install -y \
   curl \
   expect \
