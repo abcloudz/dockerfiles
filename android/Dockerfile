@@ -1,6 +1,7 @@
 FROM ubuntu:20.04
 
 LABEL maintainer "ABCloudz"
+LABEL description "Lightweight Android runner image with shared SDK volumes"
 
 ENV DEBIAN_FRONTEND noninteractive
 
