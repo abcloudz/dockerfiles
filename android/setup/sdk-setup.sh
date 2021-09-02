@@ -19,6 +19,9 @@ cp android-accept-licenses.sh "${ANDROID_HOME}/android-accept-licenses.sh"
 
 cd ${ANDROID_HOME}
 
+apt update
+apt install libarchive-tools openjdk-11-jdk curl
+
 echo "Downloading cmdline-tools"
 mkdir -p cmdline-tools/latest/ \
     && curl -sSL https://dl.google.com/android/repository/commandlinetools-linux-7583922_latest.zip -o cmdline-tools.zip \
