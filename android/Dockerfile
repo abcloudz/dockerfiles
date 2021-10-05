@@ -32,10 +32,9 @@ RUN dpkg --add-architecture i386 && apt-get update -yqq && apt-get install -y \
   libnet-ssleay-perl \
   sendemail \
   openjdk-11-jdk \
+  ca-certificates \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 
 ENV LANG en_US.UTF-8
-
-RUN apt install --reinstall ca-certificates
