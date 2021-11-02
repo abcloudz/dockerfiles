@@ -39,3 +39,5 @@ RUN dpkg --add-architecture i386 && apt-get update -yqq && apt-get install -y \
 ENV LANG en_US.UTF-8
 
 RUN apt-get install -y ca-certificates
+
+ENV GIT_SSL_NO_VERIFY 1
